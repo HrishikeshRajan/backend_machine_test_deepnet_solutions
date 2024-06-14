@@ -5,7 +5,7 @@ import routeHandler from 'express-async-handler';
 
 const homeController = (() => {
 
-    //APIs
+    //API
     const getConfig = routeHandler(async (req, res) => {
         const config = useHome()
         res.status(200).json(new ApiResponse({config}))
