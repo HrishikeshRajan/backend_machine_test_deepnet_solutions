@@ -3,7 +3,11 @@ import  homeRouter from './routers/home.router.js'
 import notFound from './utils/notFound.js'
 import errorHandler from './utils/errorHandler.js'
 import cors from 'cors'
+import dotenv from 'dotenv'
+dotenv.config()
+
 const app = express()
+
 
 app.get('/healthCheck', (req, res) => {
   res.send('Hello World!')

@@ -1,5 +1,5 @@
 
-import { homeSeed } from '../seed/home.js'
+import homeSeed  from '../seed/home.js'
 const useHome = () => {
   return homeSeed;
 }
